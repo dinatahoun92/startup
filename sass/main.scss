@@ -9,6 +9,8 @@
 body {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 16px;
+  color: var(--mainGray);
+  line-height: 1.5;
 }
 .mainBtn {
   border-radius: 25px;
@@ -70,3 +72,47 @@ nav {
   }
 }
 // end mainDiv
+// start features
+.features {
+  padding: 60px 0;
+  background-image: url(../imgs/features-01.jpg);
+  background-size: cover;
+  background-position: left;
+  .ourService {
+    h5 {
+      font-size: 14px;
+      color: var(--mainColor);
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 45px;
+      font-weight: 600;
+    }
+    p {
+      color: #6a6a6a;
+      line-height: 2;
+    }
+    button {
+      margin-bottom: 40px !important;
+    }
+  }
+
+  .feature {
+    margin-bottom: 30px;
+    img {
+      width: 45px;
+      // margin: auto;
+      // display: flex;
+      margin-bottom: 20px;
+    }
+    h4 {
+      // text-align: center;
+    }
+    p {
+      color: #6a6a6a;
+      line-height: 2;
+      // text-align: center;
+    }
+  }
+}
+// end features

@@ -4,7 +4,9 @@
 
 body {
   font-family: "Hind Siliguri", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  color: var(--mainGray);
+  line-height: 1.5; }
 
 .mainBtn {
   border-radius: 25px;
@@ -55,3 +57,29 @@ nav li {
       -ms-flex-item-align: start;
       align-self: start;
       margin-top: 20px !important; }
+
+.features {
+  padding: 60px 0;
+  background-image: url(../imgs/features-01.jpg);
+  background-size: cover;
+  background-position: left; }
+  .features .ourService h5 {
+    font-size: 14px;
+    color: var(--mainColor);
+    margin-bottom: 20px; }
+  .features .ourService h3 {
+    font-size: 45px;
+    font-weight: 600; }
+  .features .ourService p {
+    color: #6a6a6a;
+    line-height: 2; }
+  .features .ourService button {
+    margin-bottom: 40px !important; }
+  .features .feature {
+    margin-bottom: 30px; }
+    .features .feature img {
+      width: 45px;
+      margin-bottom: 20px; }
+    .features .feature p {
+      color: #6a6a6a;
+      line-height: 2; }
