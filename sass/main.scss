@@ -1,7 +1,7 @@
 // start variables
 :root {
   --mainColor: #ff793f;
-  --mainGray: #45308d;
+  --mainGray: #3d59fa;
   --secColor: #6a6a6a;
 }
 
@@ -20,10 +20,18 @@ body {
   padding: 10px 30px;
   background-color: var(--mainGray);
 }
+
 h3 {
   font-size: 40px;
   font-weight: 600;
   color: var(--mainGray);
+  text-transform: capitalize;
+}
+h5 {
+  font-size: 14px;
+  color: var(--mainColor);
+  margin-bottom: 15px;
+  letter-spacing: 3px;
 }
 // end general
 
@@ -91,18 +99,12 @@ nav {
 // end mainDiv
 // start features
 .features {
-  padding: 60px 0;
+  padding: 100px 0;
   background-image: url(../imgs/features-01.jpg);
   background-size: cover;
   background-position: left;
 
   .ourService {
-    h5 {
-      font-size: 14px;
-      color: var(--mainColor);
-      margin-bottom: 20px;
-    }
-
     p {
       color: #6a6a6a;
       line-height: 2;
@@ -141,20 +143,24 @@ nav {
 // start promo
 .promo {
   background-color: #f4f6fa;
-  padding-top: 60px;
+  padding-top: 100px;
+
   p.mainP {
     line-height: 1.5;
     margin: 30px 0;
   }
+
   .promoImg {
     background-image: url(../imgs/promoImg-01.png);
     background-size: contain;
-    background-position: bottom right;
-    padding-bottom: 60px;
+    background-position: bottom left;
+    padding-bottom: 100px;
     background-repeat: no-repeat;
   }
+
   .promoMain {
     padding-bottom: 60px;
+
     .promoChecklist {
       display: flex;
       align-items: center;
@@ -164,7 +170,7 @@ nav {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background-color: var(--mainGray);
+        background-color: var(--mainColor);
         font-size: 10px;
         color: #fff;
         text-align: center;
@@ -172,6 +178,7 @@ nav {
         margin-right: 15px;
         opacity: 0.8;
       }
+
       p {
         width: calc(100% - 35px);
         float: left;
@@ -182,3 +189,43 @@ nav {
 }
 
 // end promo
+// start blog
+.blog {
+  padding: 100px;
+  h3 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  h5 {
+    text-align: center;
+  }
+  .card {
+    border: 0;
+    img {
+      border: 0;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding-left: 0;
+      padding-right: 0;
+      h5 {
+        text-align: left;
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}
+// end blog
+// start reviews
+.reviews {
+  padding: 60px 0;
+  background-image: url(../imgs/bg.png);
+  background-color: var(--mainGray);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// end reviews

@@ -1,6 +1,6 @@
 :root {
   --mainColor: #ff793f;
-  --mainGray: #45308d;
+  --mainGray: #3d59fa;
   --secColor: #6a6a6a; }
 
 body {
@@ -18,7 +18,14 @@ body {
 h3 {
   font-size: 40px;
   font-weight: 600;
-  color: var(--mainGray); }
+  color: var(--mainGray);
+  text-transform: capitalize; }
+
+h5 {
+  font-size: 14px;
+  color: var(--mainColor);
+  margin-bottom: 15px;
+  letter-spacing: 3px; }
 
 nav .navbar-brand img {
   max-width: 200px; }
@@ -67,14 +74,10 @@ nav li {
       margin-top: 20px !important; }
 
 .features {
-  padding: 60px 0;
+  padding: 100px 0;
   background-image: url(../imgs/features-01.jpg);
   background-size: cover;
   background-position: left; }
-  .features .ourService h5 {
-    font-size: 14px;
-    color: var(--mainColor);
-    margin-bottom: 20px; }
   .features .ourService p {
     color: #6a6a6a;
     line-height: 2; }
@@ -94,15 +97,15 @@ nav li {
 
 .promo {
   background-color: #f4f6fa;
-  padding-top: 60px; }
+  padding-top: 100px; }
   .promo p.mainP {
     line-height: 1.5;
     margin: 30px 0; }
   .promo .promoImg {
     background-image: url(../imgs/promoImg-01.png);
     background-size: contain;
-    background-position: bottom right;
-    padding-bottom: 60px;
+    background-position: bottom left;
+    padding-bottom: 100px;
     background-repeat: no-repeat; }
   .promo .promoMain {
     padding-bottom: 60px; }
@@ -118,7 +121,7 @@ nav li {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background-color: var(--mainGray);
+        background-color: var(--mainColor);
         font-size: 10px;
         color: #fff;
         text-align: center;
@@ -129,3 +132,32 @@ nav li {
         width: calc(100% - 35px);
         float: left;
         margin: 0; }
+
+.blog {
+  padding: 100px; }
+  .blog h3 {
+    text-align: center;
+    margin-bottom: 60px; }
+  .blog h5 {
+    text-align: center; }
+  .blog .card {
+    border: 0; }
+    .blog .card img {
+      border: 0;
+      height: 300px;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    .blog .card .card-body {
+      padding-left: 0;
+      padding-right: 0; }
+      .blog .card .card-body h5 {
+        text-align: left; }
+      .blog .card .card-body p {
+        font-weight: 500; }
+
+.reviews {
+  padding: 60px 0;
+  background-image: url(../imgs/bg.png);
+  background-color: var(--mainGray);
+  background-size: cover;
+  background-repeat: no-repeat; }
