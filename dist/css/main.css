@@ -1,6 +1,6 @@
 :root {
   --mainColor: #ff793f;
-  --mainGray: #3d59fa;
+  --mainGray: #142f6f;
   --secColor: #6a6a6a; }
 
 body {
@@ -157,7 +157,47 @@ nav li {
 
 .reviews {
   padding: 60px 0;
-  background-image: url(../imgs/bg.png);
   background-color: var(--mainGray);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; }
+  .reviews img {
+    height: 180px;
+    width: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    float: left;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 50%; }
+  .reviews .review {
+    width: calc(100% - 350px);
+    -ms-flex-item-align: center;
+    align-self: center; }
+    .reviews .review p {
+      color: #fff;
+      padding-right: 20%;
+      line-height: 2;
+      margin-bottom: 20px; }
+    .reviews .review h5 {
+      font-weight: 600; }
+      .reviews .review h5 span {
+        font-weight: 400;
+        letter-spacing: 1px; }
+  .reviews .carousel-control-next {
+    right: 5% !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: 0 !important; }
+  .reviews .carousel-control-prev {
+    right: 5% !important;
+    left: auto !important;
+    top: 0 !important;
+    bottom: auto !important; }
+  .reviews .carousel-control-prev-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .reviews .carousel-control-next-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }

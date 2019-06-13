@@ -1,12 +1,13 @@
 // start variables
 :root {
   --mainColor: #ff793f;
-  --mainGray: #3d59fa;
+  --mainGray: #142f6f;
   --secColor: #6a6a6a;
 }
 
 // end variables
 // start general
+
 body {
   font-family: "Hind Siliguri", sans-serif;
   font-size: 16px;
@@ -27,12 +28,14 @@ h3 {
   color: var(--mainGray);
   text-transform: capitalize;
 }
+
 h5 {
   font-size: 14px;
   color: var(--mainColor);
   margin-bottom: 15px;
   letter-spacing: 3px;
 }
+
 // end general
 
 // start navbar
@@ -192,40 +195,97 @@ nav {
 // start blog
 .blog {
   padding: 100px;
+
   h3 {
     text-align: center;
     margin-bottom: 60px;
   }
+
   h5 {
     text-align: center;
   }
+
   .card {
     border: 0;
+
     img {
       border: 0;
       height: 300px;
       object-fit: cover;
     }
+
     .card-body {
       padding-left: 0;
       padding-right: 0;
+
       h5 {
         text-align: left;
       }
+
       p {
         font-weight: 500;
       }
     }
   }
 }
+
 // end blog
 // start reviews
 .reviews {
   padding: 60px 0;
-  background-image: url(../imgs/bg.png);
+  // background-image: url(../imgs/reviews.png);
   background-color: var(--mainGray);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: right;
+
+  img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    display: block;
+    float: left;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 50%;
+  }
+
+  .review {
+    width: calc(100% - 350px);
+    align-self: center;
+
+    p {
+      color: #fff;
+      padding-right: 20%;
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+    h5 {
+      font-weight: 600;
+      span {
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .carousel-control-next {
+    right: 5% !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: 0 !important;
+  }
+  .carousel-control-prev {
+    right: 5% !important;
+    left: auto !important;
+    top: 0 !important;
+    bottom: auto !important;
+  }
+  .carousel-control-prev-icon {
+    transform: rotate(90deg);
+  }
+  .carousel-control-next-icon {
+    transform: rotate(90deg);
+  }
 }
 
 // end reviews
