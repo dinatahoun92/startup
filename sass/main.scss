@@ -1,7 +1,7 @@
 // start variables
 :root {
   --mainColor: #ff793f;
-  --mainGray: #142f6f;
+  --mainGray: #272063;
   --secColor: #6a6a6a;
 }
 
@@ -260,32 +260,123 @@ nav {
       line-height: 2;
       margin-bottom: 20px;
     }
+
     h5 {
       font-weight: 600;
+
       span {
         font-weight: 400;
         letter-spacing: 1px;
       }
     }
   }
+
   .carousel-control-next {
     right: 5% !important;
     left: auto !important;
     top: auto !important;
     bottom: 0 !important;
   }
+
   .carousel-control-prev {
     right: 5% !important;
     left: auto !important;
     top: 0 !important;
     bottom: auto !important;
   }
+
   .carousel-control-prev-icon {
     transform: rotate(90deg);
   }
+
   .carousel-control-next-icon {
     transform: rotate(90deg);
   }
 }
 
 // end reviews
+// start footer
+footer {
+  background-image: url(../imgs/footer.jpg);
+
+  hr {
+    border: 1px solid #fff;
+    opacity: .1;
+  }
+
+  .mainFooter {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+
+
+    .social {
+      align-self: center;
+
+      a {
+        width: 55px;
+        height: 55px;
+        color: #142f6f;
+        background-color: #fff;
+        opacity: .7;
+        display: inline-block;
+        border-radius: 50%;
+        text-align: center;
+        margin: 10px;
+
+        i {
+          font-size: 20px;
+          line-height: 55px;
+
+        }
+
+
+      }
+
+
+
+    }
+
+    .links {
+      margin-top: 30px;
+
+      p {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      ul {
+        padding: 0;
+        text-align: center;
+
+        li {
+          list-style: none;
+          display: inline;
+
+          a {
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .subFooter {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #fff;
+    background-color: #1c164e91;
+    letter-spacing: 3px;
+
+  }
+
+}
+
+// end footer
