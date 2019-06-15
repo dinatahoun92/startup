@@ -14,6 +14,8 @@ body {
   color: var(--secColor);
   line-height: 1.5;
   letter-spacing: 1px;
+  // scroll-behavior: smooth;
+  position: relative;
 }
 
 .mainBtn {
@@ -40,6 +42,9 @@ h5 {
 
 // start navbar
 nav {
+  transition: background-color ease 0.5s, box-shadow ease 0.5s;
+  text-transform: capitalize;
+
   .navbar-brand {
     img {
       max-width: 200px;
@@ -51,6 +56,10 @@ nav {
     font-weight: 600;
   }
 }
+.fixed-top {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
 
 // end navbar
 // start mainDiv
@@ -60,6 +69,10 @@ nav {
   // background-size: cover;
   // background-position: bottom;
   background-color: #f4f6fa;
+  position: relative;
+  z-index: 100;
+  position: relative;
+  z-index: 100;
 
   .img {
     background-image: url(../imgs/main-01.png);
@@ -106,6 +119,8 @@ nav {
   background-image: url(../imgs/features-01.jpg);
   background-size: cover;
   background-position: left;
+  position: relative;
+  z-index: 100;
 
   .ourService {
     p {
@@ -147,6 +162,8 @@ nav {
 .promo {
   background-color: #f4f6fa;
   padding-top: 100px;
+  position: relative;
+  z-index: 100;
 
   p.mainP {
     line-height: 1.5;
@@ -195,6 +212,11 @@ nav {
 // start blog
 .blog {
   padding: 100px;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 450px;
 
   h3 {
     text-align: center;
@@ -238,6 +260,8 @@ nav {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  position: relative;
+  z-index: 100;
 
   img {
     height: 180px;
@@ -298,10 +322,15 @@ nav {
 // start footer
 footer {
   background-image: url(../imgs/footer.jpg);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0 !important;
 
   hr {
     border: 1px solid #fff;
-    opacity: .1;
+    opacity: 0.1;
   }
 
   .mainFooter {
@@ -309,7 +338,6 @@ footer {
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-
 
     .social {
       align-self: center;
@@ -319,23 +347,20 @@ footer {
         height: 55px;
         color: #142f6f;
         background-color: #fff;
-        opacity: .7;
+        opacity: 0.7;
         display: inline-block;
         border-radius: 50%;
         text-align: center;
         margin: 10px;
-
+        &:hover {
+          opacity: 1;
+          transition: opacity ease 0.5s;
+        }
         i {
           font-size: 20px;
           line-height: 55px;
-
         }
-
-
       }
-
-
-
     }
 
     .links {
@@ -366,7 +391,6 @@ footer {
     }
   }
 
-
   .subFooter {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -374,9 +398,7 @@ footer {
     color: #fff;
     background-color: #1c164e91;
     letter-spacing: 3px;
-
   }
-
 }
 
 // end footer
