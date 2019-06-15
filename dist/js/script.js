@@ -14,7 +14,6 @@ $(document).ready(function () {
 
         } else {
             $('.navbar').removeClass('fixed-top');
-            console.log("hs")
 
         }
     }
