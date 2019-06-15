@@ -28,12 +28,22 @@ h5 {
   margin-bottom: 15px;
   letter-spacing: 3px; }
 
+.btn-primary.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+
 nav {
   -webkit-transition: background-color ease 0.5s, -webkit-box-shadow ease 0.5s;
   transition: background-color ease 0.5s, -webkit-box-shadow ease 0.5s;
   transition: background-color ease 0.5s, box-shadow ease 0.5s;
   transition: background-color ease 0.5s, box-shadow ease 0.5s, -webkit-box-shadow ease 0.5s;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  z-index: 999999999999999;
+  background-color: #fff; }
   nav .navbar-brand img {
     max-width: 200px; }
   nav li {
@@ -292,3 +302,54 @@ footer {
     color: #fff;
     background-color: #1c164e91;
     letter-spacing: 3px; }
+
+@media screen and (max-width: 992px) {
+  .promo .promoImg {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .mainDiv {
+    text-align: center; }
+  .mainDiv .mainText .mainBtn {
+    margin-right: auto;
+    margin-left: auto; }
+  .mainDiv .img {
+    background: none; }
+  .ourService {
+    text-align: center; }
+  .features .feature h4 {
+    text-align: center; }
+  .features .feature p {
+    text-align: center; }
+  .features .feature img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block; }
+  .reviews .review {
+    width: 100%;
+    text-align: center; }
+  .reviews img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px; }
+  .reviews .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .reviews .review p {
+    padding-right: 0; } }
+
+@media screen and (max-width: 450px) {
+  .mainDiv .mainText h2 {
+    font-size: 32px; }
+  footer .mainFooter .social a {
+    width: 35px;
+    height: 35px; }
+  footer .mainFooter .social a i {
+    line-height: 35px;
+    font-size: 14px; }
+  footer .mainFooter .links ul li a {
+    font-size: 12px; }
+  footer .subFooter {
+    font-size: 12px; } }
