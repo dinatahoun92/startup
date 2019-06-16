@@ -1,6 +1,32 @@
 $(document).ready(function () {
 
-    "use strict";
+    // Add smooth scrolling 
+
+    $('a[href="#top"]').click(function () {
+        $('html, body').animate({
+            'scrollTop': $('#top').offset().top - 90
+        }, 1100, 'linear')
+    });
+    $('a[href="#features"]').click(function () {
+        $('html, body').animate({
+            'scrollTop': $('#features').offset().top - 90
+        }, 1100, 'linear')
+    });
+    $('a[href="#reviews"]').click(function () {
+        $('html, body').animate({
+            'scrollTop': $('#reviews').offset().top - 90
+        }, 1100, 'linear')
+    });
+    $('a[href="#promo"]').click(function () {
+        $('html, body').animate({
+            'scrollTop': $('#promo').offset().top - 90
+        }, 1100, 'linear')
+    });
+    $('a[href="#blog"]').click(function () {
+        $('html, body').animate({
+            'scrollTop': $('#blog').offset().top - 90
+        }, 1100, 'linear')
+    });
 
 
     //Update Header Style and Scroll to Top
@@ -20,20 +46,8 @@ $(document).ready(function () {
 
     headerStyle();
 
-    // Add smooth scrolling 
+    // Scroll to a certain element
 
-    $('a[href^="#"]').on('click', function (e) {
-        // e.preventDefault();
-
-        var target = this.hash,
-            $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 90
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
     $(window).scroll(function () {
         headerStyle();
     });
